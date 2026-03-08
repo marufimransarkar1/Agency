@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>premium | IT craft</title>
+  <!-- Tailwind via CDN + a touch of google font for elegance -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+  <style>
+    * { font-family: 'Inter', system-ui, sans-serif; }
+    body { background-color: #fafbfc; scroll-behavior: smooth;}
+    /* subtle grain / glow utility */
+    .glow-card {
+      transition: all 0.25s ease;
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(2px);
+    }
+    .glow-card:hover {
+      box-shadow: 0 25px 40px -12px rgba(0,20,120,0.2), 0 0 0 1px rgba(99,102,241,0.1) inset;
+      transform: translateY(-4px);
+      background: white;
+    }
+    .premium-gradient {
+      background: linear-gradient(145deg, #ffffff 0%, #f2f5ff 100%);
+    }
+    .hero-blend {
+      background: radial-gradient(ellipse at 70% 30%, rgba(224,231,255,0.5) 0%, transparent 60%),
+                  linear-gradient(135deg, #f6f8ff 0%, #edf0fa 100%);
+    }
+  </style>
+</head>
+<body class="antialiased text-[#141b33]">
+
+  <!-- HEADER / NAV – clean, minimal, premium -->
+  <header class="fixed w-full top-0 z-50 bg-white/75 backdrop-blur-lg border-b border-white/20 shadow-sm">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4 md:py-5">
+      <a href="#" class="text-2xl font-semibold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-[#1f2b5c] to-[#4f46e5]">⍟ ITERRA</a>
+      <nav class="hidden md:flex gap-9 text-sm font-medium text-gray-700">
+        <a href="#" class="hover:text-[#4f46e5] transition">home</a>
+        <a href="#services" class="hover:text-[#4f46e5] transition">services</a>
+        <a href="#work" class="hover:text-[#4f46e5] transition">work</a>
+        <a href="#contact" class="hover:text-[#4f46e5] transition">contact</a>
+      </nav>
+      <button class="bg-[#141b33] text-white text-sm px-5 py-2.5 rounded-2xl shadow-md shadow-indigo-200/80 hover:bg-[#1f2b5c] transition">get in touch</button>
+    </div>
+  </header>
+
+  <main class="pt-24 md:pt-28">
+
+    <!-- HERO – sleek, modern, agency vibe -->
+    <section class="max-w-7xl mx-auto px-6 md:px-8 pb-16 md:pb-24 hero-blend rounded-b-[3rem] md:rounded-b-[4rem]">
+      <div class="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
+        <div class="flex-1 text-center lg:text-left">
+          <span class="inline-block bg-indigo-50/70 text-indigo-700 text-xs font-semibold px-4 py-1.5 rounded-full border border-indigo-200/50 backdrop-blur-sm mb-6">✦ IT excellence · global agency</span>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-[#0b1128]">where code, <br>pixels & words <br><span class="text-indigo-600">build empires</span></h1>
+          <p class="text-gray-600 text-lg mt-6 max-w-xl mx-auto lg:mx-0">web dev · app dev · software eng · video · content · sales · graphic · UI/UX — every IT layer under one roof, crafted premium.</p>
+          <div class="flex flex-wrap gap-4 mt-8 justify-center lg:justify-start">
+            <button class="bg-[#141b33] text-white px-8 py-3.5 rounded-2xl shadow-xl shadow-indigo-300/40 hover:bg-[#232e5a] transition font-medium text-sm">explore services →</button>
+            <button class="bg-white/80 border border-indigo-200 px-8 py-3.5 rounded-2xl text-[#141b33] font-medium text-sm hover:bg-white hover:border-indigo-400 transition shadow-sm">see case studies</button>
+          </div>
+          <!-- tiny stat badges -->
+          <div class="flex items-center gap-6 mt-12 text-sm text-gray-500 justify-center lg:justify-start">
+            <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-emerald-400"></span> 120+ experts</span>
+            <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-indigo-400"></span> 8 countries</span>
+            <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-amber-400"></span> 600+ launches</span>
+          </div>
+        </div>
+        <div class="flex-1 relative">
+          <div class="relative z-10 bg-white/30 p-3 rounded-[2.5rem] shadow-2xl shadow-indigo-200/60 border border-white/60 backdrop-blur-sm">
+            <img src="https://placehold.co/600x500/f0f2fe/7c82b5?text=premium+agency+hub&font=montserrat" alt="creative it hub" class="rounded-[2rem] w-full object-cover">
+          </div>
+          <div class="absolute -bottom-6 -left-6 w-40 h-40 bg-indigo-200/30 rounded-full blur-3xl -z-10"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES – all the sectors you named + more, premium cards -->
+    <section id="services" class="max-w-7xl mx-auto px-6 md:px-8 py-20 md:py-28">
+      <div class="text-center max-w-2xl mx-auto">
+        <span class="text-indigo-600 font-semibold text-sm tracking-widest">–––  our spectrum  –––</span>
+        <h2 class="text-3xl md:text-4xl font-bold mt-3 text-[#141b33]">full‑stack creative & technical force</h2>
+        <p class="text-gray-500 mt-4">web, mobile, AI, video, sales & design — no silos, only seamless quality.</p>
+      </div>
+
+      <!-- grid of services (2 on mobile, 3 md, 4 lg) – exactly the sectors you listed + extras -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-16">
+        <!-- web development -->
+        <div class="glow-card p-5 rounded-3xl border border-white/70 premium-gradient shadow-sm">
+          <div class="w-10 h-10 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-700 text-xl mb-4">🌐</div>
+          <h3 class="font-semibold text-lg">web dev</h3>
+          <p class="text-xs text-gray-500 mt-1 leading-relaxed">react, vue, e‑commerce, CMS, SPA, enterprise</p>
+        </div>
+        <!-- app dev -->
+        <div class="glow-card p-5 rounded-3xl border border-white/70 premium-gradient shadow-sm">
+          <div class="w-10 h-10 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-700 text-xl mb-4">📱</div>
+          <h3 class="font-semibold text-lg">app dev</h3>
+          <p class="text-xs text-gray-500 mt-1 leading-relaxed">iOS · android · cross‑platform · flutter, kotlin</p>
+        </div>
+        <!-- software engineering -->
+        <div class="glow-card p-5 rounded-3xl border border-white/70 premium-gradient shadow-sm">
+          <div class="w-10 h-10 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-700 text-xl mb-4">⚙️</div>
+          <h3 class="font-semibold text-lg">software eng</h3>
+          <p class="text-xs text-gray-500 mt-1 leading-relaxed">backend, APIs, microservices, cloud, DevOps</p>
+        </div>
+        <!-- video editing -->
+        <div class="glow-card p-5 rounded-3xl border border-white/70 premium-gradient shadow-sm">
+          <div class="w-10 h-10 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-700 text-xl mb-4">🎬</div>
+          <h3 class="font-semibold text-lg">video editing</h3>
+          <p class="text-xs text-gray-500 mt-1 leading-relaxed">post‑production, motion, ads, cinematic</p>
+        </div>
+        <!-- content writing -->
+        <div class="glow-card p-5 rounded-3xl border border-white/70 premium-gradient shadow-sm">
+          <div class="w-10 h-10 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-700 text-xl mb-4">✍️</div>
+          <h3 class="font-semibold text-lg">content writing</h3>
+          <p class="text-xs text-gray-500 mt-1 leading-relaxed">tech blogs, UX copy, whitepapers, seo</p>
+        </div>
+        <!-- sales / CRM -->
+        <div class="glow-card p-5 rounded-3xl border border-white/70 premium-gradient shadow-sm">
+          <div class="w-10 h-10 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-700 text-xl mb-4">📊</div>
+          <h3 class="font-semibold text-lg">sales enablement</h3>
+          <p class="text-xs text-gray-500 mt-1 leading-relaxed">CRM, sales funnels, outreach automation</p>
+        </div>
+        <!-- graphic design -->
+        <div class="glow-card p-5 rounded-3xl border border-white/70 premium-gradient shadow-sm">
+          <div class="w-10 h-10 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-700 text-xl mb-4">🎨</div>
+          <h3 class="font-semibold text-lg">graphic design</h3>
+          <p class="text-xs text-gray-500 mt-1 leading-relaxed">brand identity, print, social creatives</p>
+        </div>
+        <!-- ui/ux -->
+        <div class="glow-card p-5 rounded-3xl border border-white/70 premium-gradient shadow-sm">
+          <div class="w-10 h-10 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-700 text-xl mb-4">🖌️</div>
+          <h3 class="font-semibold text-lg">UI/UX design</h3>
+          <p class="text-xs text-gray-500 mt-1 leading-relaxed">wireframing, prototypes, user research</p>
+        </div>
+        <!-- extra: AI / data (implied by 'etc more sector') -->
+        <div class="glow-card p-5 rounded-3xl border border-white/70 premium-gradient shadow-sm">
+          <div class="w-10 h-10 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-700 text-xl mb-4">🤖</div>
+          <h3 class="font-semibold text-lg">AI & data</h3>
+          <p class="text-xs text-gray-500 mt-1 leading-relaxed">LLMs, analytics, computer vision</p>
+        </div>
+        <!-- cybersecurity (more IT flavour) -->
+        <div class="glow-card p-5 rounded-3xl border border-white/70 premium-gradient shadow-sm">
+          <div class="w-10 h-10 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-700 text-xl mb-4">🛡️</div>
+          <h3 class="font-semibold text-lg">cybersecurity</h3>
+          <p class="text-xs text-gray-500 mt-1 leading-relaxed">audit, compliance, app security</p>
+        </div>
+        <!-- qa / testing -->
+        <div class="glow-card p-5 rounded-3xl border border-white/70 premium-gradient shadow-sm">
+          <div class="w-10 h-10 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-700 text-xl mb-4">🧪</div>
+          <h3 class="font-semibold text-lg">QA & testing</h3>
+          <p class="text-xs text-gray-500 mt-1 leading-relaxed">automation, performance, E2E</p>
+        </div>
+        <!-- it consulting -->
+        <div class="glow-card p-5 rounded-3xl border border-white/70 premium-gradient shadow-sm">
+          <div class="w-10 h-10 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-700 text-xl mb-4">💼</div>
+          <h3 class="font-semibold text-lg">IT consulting</h3>
+          <p class="text-xs text-gray-500 mt-1 leading-relaxed">strategy, architecture, scaling</p>
+        </div>
+      </div>
+      <div class="text-center mt-12 text-sm text-gray-400 flex items-center justify-center gap-2">✧ 12+ specialized practices ✧</div>
+    </section>
+
+    <!-- WORK / selected projects – minimal, elegant, eyecatching -->
+    <section id="work" class="bg-[#f0f3fd] py-20 md:py-28 border-y border-indigo-100/70">
+      <div class="max-w-7xl mx-auto px-6 md:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+          <div>
+            <span class="text-indigo-600 font-semibold text-sm tracking-widest">–––  recent  –––</span>
+            <h2 class="text-3xl md:text-4xl font-bold mt-2 text-[#141b33]">craft that speaks</h2>
+          </div>
+          <p class="text-gray-500 max-w-md text-sm md:text-right">from fintech apps to viral video campaigns — work that blends tech & art.</p>
+        </div>
+
+        <!-- case grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7 mt-14">
+          <div class="bg-white rounded-3xl p-5 shadow-md hover:shadow-xl transition border border-indigo-50">
+            <div class="h-44 bg-gradient-to-br from-indigo-100 to-indigo-200 rounded-2xl flex items-center justify-center text-indigo-800 text-4xl">📱</div>
+            <h3 class="font-semibold text-lg mt-5">fintech hub app</h3>
+            <p class="text-xs text-gray-500">full mobile dev + UX/UI · react native</p>
+          </div>
+          <div class="bg-white rounded-3xl p-5 shadow-md hover:shadow-xl transition border border-indigo-50">
+            <div class="h-44 bg-gradient-to-br from-sky-100 to-indigo-200 rounded-2xl flex items-center justify-center text-indigo-800 text-4xl">🎥</div>
+            <h3 class="font-semibold text-lg mt-5">brand launch video</h3>
+            <p class="text-xs text-gray-500">video editing / motion + graphic design</p>
+          </div>
+          <div class="bg-white rounded-3xl p-5 shadow-md hover:shadow-xl transition border border-indigo-50">
+            <div class="h-44 bg-gradient-to-br from-amber-100 to-indigo-100 rounded-2xl flex items-center justify-center text-indigo-800 text-4xl">🖥️</div>
+            <h3 class="font-semibold text-lg mt-5">AI dashboard suite</h3>
+            <p class="text-xs text-gray-500">software eng · ui/ux · data visualization</p>
+          </div>
+        </div>
+        <div class="flex justify-center mt-10">
+          <button class="text-indigo-600 text-sm font-medium flex items-center gap-1 border-b border-indigo-200 pb-0.5 hover:gap-2 transition-all">view all projects <span>→</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US / elegant mini banner with contact / CTA -->
+    <section id="contact" class="max-w-6xl mx-auto px-6 md:px-8 py-24">
+      <div class="bg-[#141b33] text-white rounded-[3rem] p-10 md:p-16 shadow-2xl shadow-indigo-300/30 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-indigo-600/20 rounded-full blur-[100px]"></div>
+        <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10">
+          <div>
+            <h3 class="text-3xl md:text-4xl font-bold leading-tight">premium IT synergy,<br>ready for your vision</h3>
+            <p class="text-indigo-200 mt-4 max-w-lg text-sm md:text-base">web, apps, video, content, ui/ux, sales, graphic — one agency, infinite possibilities.</p>
+            <div class="flex flex-wrap gap-4 mt-8">
+              <button class="bg-white text-[#141b33] px-8 py-3.5 rounded-2xl font-medium text-sm shadow-xl hover:bg-indigo-50 transition">contact us</button>
+              <button class="border border-indigo-400 text-white px-8 py-3.5 rounded-2xl font-medium text-sm hover:bg-indigo-800/30 transition">+1 (800) 457-289</button>
+            </div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm p-6 rounded-3xl border border-white/20 min-w-[240px]">
+            <p class="text-xs text-indigo-200 mb-2">📬 quick connect</p>
+            <p class="font-mono text-sm">hello@iterra.agency</p>
+            <p class="font-mono text-sm mt-2">+44 20 7946 0138</p>
+            <div class="flex gap-4 mt-5 text-indigo-300">
+              <span>✨</span> <span>✨</span> <span>✨</span> <span class="text-xs">/ 24/7 presence</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENTS strip / subtle social proof -->
+    <div class="border-t border-indigo-100 py-8 bg-white/40">
+      <div class="max-w-7xl mx-auto px-6 flex flex-wrap items-center justify-center gap-8 md:gap-14 text-gray-400 text-sm font-medium">
+        <span>stripe</span><span>·</span><span>airbnb</span><span>·</span><span>linear</span><span>·</span><span>figma</span><span>·</span><span>notion</span><span>·</span><span>vercel</span>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER – simple, elegant -->
+  <footer class="bg-white border-t border-indigo-100/80 py-10">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+      <div class="flex items-center gap-2">
+        <span class="text-indigo-600 text-xl">⍟</span> <span class="font-medium">ITERRA · IT agency</span>
+      </div>
+      <div class="flex gap-8 mt-4 md:mt-0">
+        <a href="#" class="hover:text-indigo-600">linkedin</a>
+        <a href="#" class="hover:text-indigo-600">dribbble</a>
+        <a href="#" class="hover:text-indigo-600">instagram</a>
+      </div>
+      <p class="text-xs text-gray-400 mt-4 md:mt-0">© 2025 — premium IT craft across all sectors.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
